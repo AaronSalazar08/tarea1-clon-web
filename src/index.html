@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheBlog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <!-- ========== HEADER / NAV ========== -->
+    <header class="site-header">
+      <nav class="nav-principal">
+        <div class="nav-logo">TheBlog</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Gaming</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Food</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main class="site-main">
+
+      <!-- === SECCIÓN: 3 tarjetas superiores === -->
+      <section class="seccion-tarjetas-top" aria-label="Artículos destacados">
+
+        <article class="tarjeta">
+          <div class="tarjeta-imagen-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80"
+              alt="Paisaje de montañas con lago reflejando el cielo azul"
+            />
+            <span class="etiqueta etiqueta-lifestyle">Lifestyle</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">The Most Popular Places to Visit in the World</h3>
+            <p class="tarjeta-fuente">Top Places</p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta-imagen-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80"
+              alt="Persona realizando pose de yoga al amanecer"
+            />
+            <span class="etiqueta etiqueta-health">Health</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Does Exercise Help with your Productivity</h3>
+            <p class="tarjeta-fuente">Health Chat</p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta-imagen-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80"
+              alt="Manos sosteniendo un control de videojuego con luces de neón de fondo"
+            />
+            <span class="etiqueta etiqueta-gaming">Gaming</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Can Playing Video Games Help Reduce Stress?</h3>
+            <p class="tarjeta-fuente">Game Play</p>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- === SECCIÓN: Artículo destacado + Barra lateral === -->
+      <section class="seccion-contenido" aria-label="Artículo principal y sidebar">
+
+        <!-- Artículo principal -->
+        <article class="articulo-destacado">
+          <img
+            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80"
+            alt="Vista desde la proa de un bote en el lago de Braies rodeado de montañas verdes"
+            class="articulo-imagen"
+          />
+          <span class="etiqueta etiqueta-travel">Travel</span>
+          <h2 class="articulo-titulo">Where to Visit on Your Next Vacation</h2>
+          <p class="articulo-meta">Written by Jane Doe on December 02, 2019</p>
+          <p class="articulo-extracto">
+            There are thousands of places you can visit on your next vacation. In this post
+            we'll show you the top destinations to consider for your next adventure...
+          </p>
+          <a href="#" class="leer-mas">Continue Reading ↗</a>
+        </article>
+
+        <!-- Barra lateral -->
+        <aside class="sidebar" aria-label="Barra lateral">
+
+          <!-- Newsletter -->
+          <div class="sidebar-bloque newsletter">
+            <h3 class="sidebar-titulo">Subscribe to our Newsletter</h3>
+            <p class="sidebar-subtitulo">No Spam. Only one email per week.</p>
+            <form class="newsletter-form" aria-label="Formulario de suscripción">
+              <input type="text" placeholder="First Name" aria-label="Nombre" />
+              <input type="email" placeholder="Email Address" aria-label="Correo electrónico" />
+              <button type="button" class="btn-suscribir">SUBSCRIBE</button>
+            </form>
+          </div>
+
+          <!-- Categorías -->
+          <div class="sidebar-bloque categorias">
+            <h3 class="sidebar-titulo">Categories</h3>
+            <ul class="categorias-lista">
+              <li><a href="#">Lifestyle</a><span>32</span></li>
+              <li><a href="#">Health</a><span>41</span></li>
+              <li><a href="#">Gaming</a><span>27</span></li>
+              <li><a href="#">Travel</a><span>21</span></li>
+              <li><a href="#">Food</a><span>15</span></li>
+              <li><a href="#">Business</a><span>28</span></li>
+            </ul>
+          </div>
+
+          <!-- Posts recientes -->
+          <div class="sidebar-bloque posts-recientes">
+            <h3 class="sidebar-titulo">Recent Posts</h3>
+
+            <article class="post-reciente">
+              <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=100&q=80"
+                alt="Destinos de montaña para visitar"
+              />
+              <div class="post-reciente-info">
+                <h4>Top Destinations to Visit in the World</h4>
+                <time datetime="2021-01-02">January 02, 2021</time>
+              </div>
+            </article>
+
+            <article class="post-reciente">
+              <img
+                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=100&q=80"
+                alt="Experiencia del gaming en 3D"
+              />
+              <div class="post-reciente-info">
+                <h4>Experience the Future of the 3D Gaming Experience</h4>
+                <time datetime="2021-01-04">January 04, 2021</time>
+              </div>
+            </article>
+
+            <article class="post-reciente">
+              <img
+                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=100&q=80"
+                alt="Viaje al fin del mundo, paisaje remoto"
+              />
+              <div class="post-reciente-info">
+                <h4>Take a Trip to The End of The World</h4>
+                <time datetime="2021-01-05">January 05, 2021</time>
+              </div>
+            </article>
+
+          </div>
+
+        </aside>
+
+      </section>
+
+      <!-- === SECCIÓN: Cuadrícula de 4 tarjetas === -->
+      <section class="seccion-grid" aria-label="Más artículos">
+
+        <article class="tarjeta-grid">
+          <img
+            src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80"
+            alt="Grupo de amigos alrededor de una fogata en la playa durante la noche"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Time for the Beach and Friends</h3>
+            <p>How nice would that be to go to amazing scenery, yet they rarely take...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-grid">
+          <img
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&q=80"
+            alt="Carretera solitaria entre montañas nevadas bajo un cielo estrellado"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Are you Ready for an Experience?</h3>
+            <p>Check out these awesome places you'll want to visit as you set your...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-grid">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80"
+            alt="Niños corriendo y jugando en un bosque lleno de árboles altos"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Take Me Back in Time</h3>
+            <p>How nice would that be to go back in time and enjoy the youth...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-grid">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80"
+            alt="Atleta en posición de arranque sobre una pista de atletismo"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Here are the Best Ways to Train</h3>
+            <p>Learn about the best ways to train to get the form of your workout...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <p>&copy; 2021 TheBlog. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
