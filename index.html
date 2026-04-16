@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheBlog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-principal">
+        <div class="nav-logo">TheBlog</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Gaming</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Food</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="site-main">
+
+      <section class="seccion-tarjetas-top" aria-label="Artículos destacados">
+
+        <article class="tarjeta">
+          <div class="tarjeta-imagen-wrapper">
+            <img
+              src="./img/montanas.jpg"
+              alt="Paisaje de montañas con lago reflejando el cielo azul"
+            />
+            <span class="etiqueta etiqueta-lifestyle">Lifestyle</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">The Most Popular Places to Visit in the World</h3>
+            <p class="tarjeta-fuente">Top Places</p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta-imagen-wrapper">
+            <img
+              src="./img/yoga.jpg"
+              alt="Persona realizando pose de yoga al amanecer"
+            />
+            <span class="etiqueta etiqueta-health">Health</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Does Exercise Help with your Productivity</h3>
+            <p class="tarjeta-fuente">Health Chat</p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta-imagen-wrapper">
+            <img
+              src="./img/gaming.jpg"
+              alt="Manos sosteniendo un control de videojuego con luces de neón de fondo"
+            />
+            <span class="etiqueta etiqueta-gaming">Gaming</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Can Playing Video Games Help Reduce Stress?</h3>
+            <p class="tarjeta-fuente">Game Play</p>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="seccion-contenido" aria-label="Artículo principal y sidebar">
+
+        <article class="articulo-destacado">
+          <img
+            src="./img/lago-bote.jpg"
+            alt="Vista desde la proa de un bote en el lago de Braies rodeado de montañas verdes"
+            class="articulo-imagen"
+          />
+          <span class="etiqueta etiqueta-travel">Travel</span>
+          <h2 class="articulo-titulo">Where to Visit on Your Next Vacation</h2>
+          <p class="articulo-meta">Written by Jane Doe on December 02, 2019</p>
+          <p class="articulo-extracto">
+           There are thousands of places you can visit on your next vacation. In this post, we’ll show you the top destinations to consider for your next adventure, from breathtaking tropical beaches with crystal-clear waters and white sand to vibrant cities full of culture, history, and unforgettable nightlife. Whether you dream of exploring ancient landmarks, relaxing in luxury resorts, hiking through stunning mountain landscapes, or tasting unique local cuisine, there is a perfect destination waiting for you. Traveling gives you the opportunity to discover new traditions, meet amazing people, and create memories that will stay with you forever. From the romantic streets of Europe to the exotic beauty of آسيا and the natural wonders of Latin America, every place offers a different experience that can match your interests and travel style. No matter if you are looking for a peaceful escape, a family-friendly trip, or an exciting adventure full of adrenaline, choosing the right destination can make your vacation truly unforgettable.
+          </p>
+          <a href="#" class="leer-mas">Continue Reading ↗</a>
+        </article>
+
+        <aside class="sidebar" aria-label="Barra lateral">
+
+          <div class="sidebar-bloque newsletter">
+            <h3 class="sidebar-titulo">Subscribe to our Newsletter</h3>
+            <p class="sidebar-subtitulo">No Spam. Only one email per week.</p>
+            <form class="newsletter-form" aria-label="Formulario de suscripción">
+              <input type="text" placeholder="First Name" aria-label="Nombre" />
+              <input type="email" placeholder="Email Address" aria-label="Correo electrónico" />
+              <button type="button" class="btn-suscribir">SUBSCRIBE</button>
+            </form>
+          </div>
+
+          <div class="sidebar-bloque categorias">
+            <h3 class="sidebar-titulo">Categories</h3>
+            <ul class="categorias-lista">
+              <li><a href="#">Lifestyle</a><span>32</span></li>
+              <li><a href="#">Health</a><span>41</span></li>
+              <li><a href="#">Gaming</a><span>27</span></li>
+              <li><a href="#">Travel</a><span>21</span></li>
+              <li><a href="#">Food</a><span>15</span></li>
+              <li><a href="#">Business</a><span>28</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-bloque posts-recientes">
+            <h3 class="sidebar-titulo">Recent Posts</h3>
+
+            <article class="post-reciente">
+              <img
+                src="./img/montanas.jpg"
+                alt="Destinos de montaña para visitar"
+              />
+              <div class="post-reciente-info">
+                <h4>Top Destinations to Visit in the World</h4>
+                <time datetime="2021-01-02">January 02, 2021</time>
+              </div>
+            </article>
+
+            <article class="post-reciente">
+              <img
+                src="./img/gaming.jpg"
+                alt="Experiencia del gaming en 3D"
+              />
+              <div class="post-reciente-info">
+                <h4>Experience the Future of the 3D Gaming Experience</h4>
+                <time datetime="2021-01-04">January 04, 2021</time>
+              </div>
+            </article>
+
+            <article class="post-reciente">
+              <img
+                src="./img/lago-bote.jpg"
+                alt="Viaje al fin del mundo, paisaje remoto"
+              />
+              <div class="post-reciente-info">
+                <h4>Take a Trip to The End of The World</h4>
+                <time datetime="2021-01-05">January 05, 2021</time>
+              </div>
+            </article>
+
+          </div>
+
+        </aside>
+
+      </section>
+
+      <section class="seccion-grid" aria-label="Más artículos">
+
+        <article class="tarjeta-grid">
+          <img
+            src="./img/fogata.jpg"
+            alt="Grupo de amigos alrededor de una fogata en la playa durante la noche"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Time for the Beach and Friends</h3>
+            <p>How nice would that be to go to amazing scenery, yet they rarely take...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-grid">
+          <img
+            src="./img/carretera.jpg"
+            alt="Carretera solitaria entre montañas nevadas bajo un cielo estrellado"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Are you Ready for an Experience?</h3>
+            <p>Check out these awesome places you'll want to visit as you set your...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-grid">
+          <img
+            src="./img/bosque.jpg"
+            alt="Niños corriendo y jugando en un bosque lleno de árboles altos"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Take Me Back in Time</h3>
+            <p>How nice would that be to go back in time and enjoy the youth...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-grid">
+          <img
+            src="./img/atleta.jpg"
+            alt="Atleta en posición de arranque sobre una pista de atletismo"
+          />
+          <div class="tarjeta-grid-cuerpo">
+            <h3>Here are the Best Ways to Train</h3>
+            <p>Learn about the best ways to train to get the form of your workout...</p>
+            <a href="#" class="leer-mas">Continue Reading ↗</a>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2021 TheBlog. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
